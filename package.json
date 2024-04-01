@@ -2,7 +2,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/servidor.js"
+    "dev": "nodemon src/socket-back.js"
   },
   "dependencies": {
     "express": "^4.19.1",

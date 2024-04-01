@@ -5,6 +5,7 @@ import http from "http";
 import { Server } from "socket.io";
 
 const app = express();
+// eslint-disable-next-line no-undef
 const porta = process.env.porta || 3000;
 
 const caminhoAtual = url.fileURLToPath(import.meta.url);
@@ -17,6 +18,4 @@ servidorHttp.listen(porta, () => console.log(`Servidor escutando na porta ${port
 
 const io = new Server(servidorHttp);
 
-io.on("connection", () => {
-    console.log("Um cliente se conectou!");
-});
+export default io;
